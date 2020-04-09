@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="persistent.FoodItem" table="FOOD">
+        <id column="ID" name="id" type="java.lang.Integer" />
+        <property column="NAME" name="name" type="java.lang.String" />
+        <property column="QUANTITY" name="quantity" type="java.lang.Integer" />
+        <property column="CALORIE_VALUE" name="calorie_value" type="java.lang.Integer" />
+        <property column="PURCHASE_DATE" name="purchase_date" type="java.util.Date" />
+        <property column="EXPIRATION_DATE" name="expiration_date" type="java.util.Date" />
+        <property column="CONSUMPTION_DATE" name="consumption_date" type="java.util.Date" />
+    </class>
+</hibernate-mapping>
